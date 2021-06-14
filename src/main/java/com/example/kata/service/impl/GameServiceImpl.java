@@ -11,6 +11,8 @@ import com.example.kata.service.helper.MessageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.xml.bind.ValidationException;
+
 @Service
 public class GameServiceImpl implements GameService {
 
@@ -30,7 +32,7 @@ public class GameServiceImpl implements GameService {
     }
 
     @Override
-    public GameResponse makeAMove(Movement movement) {
+    public GameResponse makeAMove(Movement movement) throws ValidationException {
 
         Game game = this.gameRepository.findById(movement.getId())
                 .orElseThrow(() -> new BaseException("log.game.notFound").userMessage("game.notFound"));
