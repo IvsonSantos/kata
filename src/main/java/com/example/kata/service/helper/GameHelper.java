@@ -53,6 +53,7 @@ public class GameHelper {
 
     /**
      * Validate the movement of the player
+     *
      * @param game
      * @param movement
      */
@@ -71,6 +72,7 @@ public class GameHelper {
 
     /**
      * Do the movement
+     *
      * @param game
      * @param movement
      */
@@ -82,6 +84,7 @@ public class GameHelper {
 
     /**
      * Check if the char on the line is equal
+     *
      * @param board
      * @return
      */
@@ -97,6 +100,7 @@ public class GameHelper {
 
     /**
      * Check if the char on the line is equal
+     *
      * @param board
      * @return
      */
@@ -109,8 +113,10 @@ public class GameHelper {
         return false;
     }
 
-    /** Check the lines
-      * @param board
+    /**
+     * Check the lines
+     *
+     * @param board
      * @return
      */
     private static Boolean checkDiagonal(Character[][] board) {
@@ -119,6 +125,7 @@ public class GameHelper {
 
     /**
      * Check if the chars are different of -
+     *
      * @param c1
      * @param c2
      * @param c3
@@ -130,6 +137,7 @@ public class GameHelper {
 
     /**
      * Check if there is a winner
+     *
      * @param board
      * @return
      */
@@ -139,6 +147,7 @@ public class GameHelper {
 
     /**
      * Check the board is full and there is no winner
+     *
      * @param board
      * @return
      */
@@ -159,6 +168,7 @@ public class GameHelper {
 
     /**
      * Check the real position
+     *
      * @param position
      * @return
      */

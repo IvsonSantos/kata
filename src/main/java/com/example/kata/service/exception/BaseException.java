@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class BaseException extends RuntimeException {
 
     private String messageKey;
-    private Object [] messageArgs;
+    private Object[] messageArgs;
 
     public BaseException(Throwable throwable) {
         super(throwable);
